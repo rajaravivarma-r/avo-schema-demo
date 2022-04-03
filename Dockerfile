@@ -7,7 +7,8 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get install -y yarn && \
   apt-get install -y imagemagick && \
   apt-get install -y libvips-tools && \
-  apt-get install -y locales
+  apt-get install -y locales && \
+  apt-get install -y python
 
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
   locale-gen en_US.UTF-8 && \
