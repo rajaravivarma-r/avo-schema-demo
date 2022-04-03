@@ -1,4 +1,4 @@
-FROM ruby:2.6.3
+FROM ruby:3.1
 
 # https://yarnpkg.com/lang/en/docs/install/#debian-stable
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
