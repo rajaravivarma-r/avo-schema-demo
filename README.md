@@ -8,10 +8,12 @@ $ cd docker-compose-rails-6
 $ docker-compose run --rm web bundle install
 $ docker-compose run --rm web yarn install
 $ docker-compose up
-$ docker-compose exec web ./bin/rails db:create
+$ docker-compose exec web ./bin/rails db:create db:migrate
 ```
 
 You can see Rails top page on http://localhost:3000/.
+
+and the error `ActiveRecord::UnknownAttributeReference: Query method called with non-attribute argument` should pop right up.
 
 
 ## pry
